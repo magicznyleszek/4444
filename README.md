@@ -8,3 +8,4 @@ For now I have here:
 - French
 - Japanese
 - Polish
+- [Urban Dictionary](http://urbandictionary.com)
