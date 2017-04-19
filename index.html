@@ -1,25 +1,25 @@
 ---
 layout: default
+filelist:
+    - english-4-letters.txt
+    - french-4-letters.txt
+    - german-4-letters.txt
+    - greek-4-letters.txt
+    - japanese-4-letters.txt
+    - latin-4-letters.txt
+    - polish-4-letters.txt
+    - russian-4-letters.txt
+    - urban-dictionary-4-letters.txt
 ---
 
 <h1>4444</h1>
 
 <p>Four letters long words lists for multiple different languages.</p>
 
-{% assign filelist = [
-    'english-4-letters.txt',
-    'french-4-letters.txt',
-    'german-4-letters.txt',
-    'greek-4-letters.txt',
-    'japanese-4-letters.txt',
-    'latin-4-letters.txt',
-    'polish-4-letters.txt',
-    'russian-4-letters.txt',
-    'urban-dictionary-4-letters.txt'
-] %}
-
 <ul>
-    {% for filename in filelist %}
-        <li><a href="http://4444.smutnyleszek.com/filtered/{{filename}}">{{filename}}</a></li>
+    {% for filename in page.filelist %}
+        <li><a href="{{ site.baseurl }}/filtered/{{ filename }}" target="_blank">{{ filename }}</a></li>
     {% endfor%}
 </ul>
+
+<p><a href="{{ site.rootSiteUrl }}">&larr;</a></p>
