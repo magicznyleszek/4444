@@ -1,0 +1,27 @@
+{
+  "name": "4444",
+  "private": true,
+  "version": "0.0.0",
+  "description": "WIP",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smutnyleszek/4444.git"
+  },
+  "author": "Leszek Pietrzak",
+  "license": "CC0 4.0 BY-NC-ND",
+  "bugs": {
+    "url": "https://github.com/smutnyleszek/4444/issues",
+    "email": "smutnyleszek@gmail.com"
+  },
+  "homepage": "https://github.com/smutnyleszek/4444",
+  "scripts": {
+    "build": "npm-run-all jekyll:build",
+    "serve": "npm-run-all build jekyll:serve",
+    "dist:rebuild": "rm -rf dist && mkdir dist",
+    "jekyll:build": "jekyll build",
+    "jekyll:serve": "jekyll serve --watch --baseurl ''"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2"
+  }
+}

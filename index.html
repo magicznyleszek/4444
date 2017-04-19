@@ -1,9 +1,25 @@
-<h1>four lttr wrds</h1>
+---
+layout: default
+---
+
+<h1>4444</h1>
+
+<p>Four letters long words lists for multiple different languages.</p>
+
+{% assign filelist = [
+    'english-4-letters.txt',
+    'french-4-letters.txt',
+    'german-4-letters.txt',
+    'greek-4-letters.txt',
+    'japanese-4-letters.txt',
+    'latin-4-letters.txt',
+    'polish-4-letters.txt',
+    'russian-4-letters.txt',
+    'urban-dictionary-4-letters.txt'
+] %}
 
 <ul>
-    <li><a href="http://smutnyleszek.com/four-letters-long-wordlist/filtered/english-4-letters.txt">english</a></li>
-    <li><a href="http://smutnyleszek.com/four-letters-long-wordlist/filtered/francais-4-lettres.txt">french</a></li>
-    <li><a href="http://smutnyleszek.com/four-letters-long-wordlist/filtered/nihongo-4-tegami.txt">japanese</a></li>
-    <li><a href="http://smutnyleszek.com/four-letters-long-wordlist/filtered/polskie-4-literowe.txt">polish</a></li>
-    <li><a href="http://smutnyleszek.com/four-letters-long-wordlist/filtered/urban-dictionary-4-letters.txt">polish</a></li>
+    {% for filename in filelist %}
+        <li><a href="http://4444.smutnyleszek.com/filtered/{{filename}}">{{filename}}</a></li>
+    {% endfor%}
 </ul>
