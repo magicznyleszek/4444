@@ -9,8 +9,8 @@ keywords: "wip"
 author: "Leszek Pietrzak"
 
 # address settings
-rootSiteUrl: "http://smutnyleszek.com"
-baseurl: "http://4444.smutnyleszek.com"
+rootSiteUrl: "http://magicznyleszek.xyz"
+baseurl: "http://4444.magicznyleszek.xyz"
 
 # site configuration
 safe: true
